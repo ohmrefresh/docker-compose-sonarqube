@@ -1,0 +1,24 @@
+version: "2"
+
+options:
+  verbose: true
+  project_root: 'config_path'
+syncs:
+  postgresql_data: 
+    src: './postgresql_data'
+    sync_excludes: ['ignored_folder', '.ignored_dot_folder']
+  sonarqube_bundled: 
+    src: './sonarqube_bundled'
+    sync_excludes: ['ignored_folder', '.ignored_dot_folder']
+  sonarqube_conf: 
+    src: './sonarqube_conf'
+    sync_excludes: ['ignored_folder', '.ignored_dot_folder']
+  sonarqube_data: 
+    src: './sonarqube_data'
+    sync_excludes: ['ignored_folder', '.ignored_dot_folder']
+  sonarqube_db: 
+    src: './sonarqube_db'
+    sync_excludes: ['ignored_folder', '.ignored_dot_folder']
+  sonarqube_extensions: 
+    src: './sonarqube_extensions'
+    sync_excludes: ['ignored_folder', '.ignored_dot_folder']
